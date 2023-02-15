@@ -1,20 +1,27 @@
 import React from "react";
+import Sidebar from "./components/Sidebar/Sidebar";
 import listSVG from "./assets/img/icon-list.svg";
-
+import AddListButton from "./components/AddListButton/AddListButton";
+import DB from "./assets/db.json";
+export type itemsType = {
+  name: string;
+  color?: string;
+  icon?: string;
+};
+const items: itemsType[] = [
+  { name: "Покупки", color: "green" },
+  { name: "Фронтенд", color: "blue" },
+  { name: "Книги", color: "pink" },
+  { name: "Фильмы и сериалы", color: "salat" },
+];
 const App: React.FC = () => {
   return (
     <div className="todo">
       <div className="todo__sidebar">
-        <ul className="todo__list">
-          <li>
-            <img src={listSVG} alt="icon-list" />
-            <p>Все задачи</p>
-          </li>
-          <li>
-            <img src={listSVG} alt="icon-list" />
-            <p>Все задачи</p>
-          </li>
-        </ul>
+        <Sidebar items={[{ name: "Все задачи", icon: listSVG }]} />
+        <Sidebar items={items} />
+
+        <AddListButton colors={DB.colors} />
       </div>
       <div className="todo__tasks">
         <div>thrthtrh</div>
