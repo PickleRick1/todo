@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import listSVG from "./assets/img/icon-list.svg";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="todo">
+      <div className="todo__sidebar">
+        <ul className="todo__list">
+          <li>
+            <img src={listSVG} alt="icon-list" />
+            <p>Все задачи</p>
+          </li>
+          <li>
+            <img src={listSVG} alt="icon-list" />
+            <p>Все задачи</p>
+          </li>
+        </ul>
+      </div>
+      <div className="todo__tasks">
+        <div>thrthtrh</div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
