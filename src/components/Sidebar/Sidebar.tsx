@@ -1,5 +1,6 @@
 import React from "react";
 import { itemsType } from "../../App";
+import Circle from "../Circle/Circle";
 import "./Sidebar.scss";
 
 type SidebarProps = {
@@ -12,7 +13,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, setShow }) => {
       {item.icon ? (
         <img src={item.icon} alt="icon" />
       ) : (
-        <div className={`circle circle--${item.color}`} />//сделать отдельым компонентом
+      item.color && <Circle color={item.color} /> //сделать отдельым компонентом
       )}
       <p>{item.name}</p>
     </li>

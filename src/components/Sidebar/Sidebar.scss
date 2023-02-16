@@ -9,23 +9,10 @@
 			margin-bottom: 5px;
 		}
 		.circle {
-			border-radius: 50%;
 			width: 10px;
 			height: 10px;
 			&:not(:last-child) {
 				margin-right: 10px;
-			}
-			&--green {
-				background: #42b883;
-			}
-			&--blue {
-				background: #64c4ed;
-			}
-			&--pink {
-				background: #ffbbcc;
-			}
-			&--salat {
-				background: #b6e6bd;
 			}
 		}
 

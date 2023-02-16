@@ -12,7 +12,7 @@ const items: itemsType[] = [
   { name: "Покупки", color: "green" },
   { name: "Фронтенд", color: "blue" },
   { name: "Книги", color: "pink" },
-  { name: "Фильмы и сериалы", color: "salat" },
+  { name: "Фильмы и сериалы", color: "lime" },
 ];
 const App: React.FC = () => {
   return (

@@ -1,0 +1,28 @@
+.circle {
+	border-radius: 50%;
+
+	&--grey {
+		background: #c9d1d3;
+	}
+	&--green {
+		background: #42b883;
+	}
+	&--purple {
+		background: #c355f5;
+	}
+	&--black {
+		background: #110133;
+	}
+	&--red {
+		background: #ff6464;
+	}
+	&--blue {
+		background: #64c4ed;
+	}
+	&--pink {
+		background: #ffbbcc;
+	}
+	&--lime {
+		background: #b6e6bd;
+	}
+}
